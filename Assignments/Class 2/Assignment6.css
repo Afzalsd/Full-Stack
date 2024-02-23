@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{   
-    background-image: url(pexels-photo-937783.jpeg);
+    background-image: url(C:\data\Full-Stack\Images\Background.jpeg);
     text-align: center;
     background-repeat: no-repeat;
     color: #fff;
@@ -32,15 +32,4 @@ a{
 }
 div{
     margin-top: 25px;
-}
-@media screen and (max-width: 810px){
-    h1{
-        font-size: 5rem;
-    }
-    body{
-        background-size:auto;
-    }
-    a{
-        display: block;
-    }
 }
