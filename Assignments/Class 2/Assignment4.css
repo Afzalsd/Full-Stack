@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+    padding: 70px;
+    
+}
+
+.heading{
+    /*font-family: "Libre Baskerville", serif;*/
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 30px;
+    margin-top: -35px;
+    margin-bottom: 25px;
+    text-shadow: 5px 2px 5px  #90AFC5;
+    color: #6AB187;
+}
+
+.about{
+    display: flex;
+    font-size: 1rem;
+    gap: 20px;
+    color: #E4EA8C;
+}
+.image{
+    width: 20vw;
+    height: 50vh;
+    /*filter: drop-shadow(5px 3px 5px #fff);*/
+}
+
+.text{
+    font-family: "Protest Revolution", sans-serif;
+    width:400px;
+    
+}
+
+a{
+    color: #F1F1F2;
+}
+span{
+    color: #be7d7d;
+}
+
+.Beyblades-heading,.age-heading{
+    font-family: "Protest Revolution", sans-serif;
+    text-shadow: 5px 2px 5px  #90AFC5;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    color: #6AB187;
+}
+
+.beyblades, .resructions{
+    font-family: "Protest Revolution", sans-serif;
+    margin-left: 2.5vw;
+    color: #E4EA8C;
+    margin-bottom: 2vh;
+}
+
+.footer{
+    font-family: "Protest Revolution", sans-serif;
+    margin-top: 2vh;
+    color:#E4EA8C;
+}
