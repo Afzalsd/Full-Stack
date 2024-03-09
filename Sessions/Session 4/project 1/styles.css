@@ -1,0 +1,32 @@
+.profile{
+    width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    position: relative;
+    background-color: aqua;
+    text-align: center;
+    height: 300px;
+
+}
+
+.profile img{
+    width: 50%;
+    
+    border-radius: 50%;
+
+}
+.profile .kai{
+    
+    position:absolute;
+    top : -3px;
+
+}
+
+.profile .logo{
+    width: 50px;
+    bottom: -25px;
+    left: 150px;
+    position:absolute;
+}
