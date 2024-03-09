@@ -1,11 +1,11 @@
- /** *{
+ /* *{
     margin:0;
     padding:0;
 }
 .parent{
     display: grid;
-  grid-template-columns: 200px 200px 200px ;
-    grid-template-rows:33.3% 33.3% 33.3%;
+ grid-template-columns: 200px 200px 200px ;
+    grid-template-rows:33.3% 33.3% 33.3%; 
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:100px 100px 100px 100px;
@@ -20,18 +20,7 @@
 .footer{
     background-color: cadetblue;
     grid-column: 1/4;
-}
-.sidebar{
-    background-color: red;
-    grid-column: 1/2;
-    grid-area: 2/4;
-}
-.content1{
-    background-color: beige;
-    grid-column: 2/4;
-    grid-area: 3/4;
-}**/
-
+}*/
 *{
     margin: 0;
     padding: 0;

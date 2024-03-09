@@ -1,0 +1,22 @@
+div{
+    background-color: aquamarine;
+    max-width: 1200px;
+    height: 600px;
+}
+
+@media screen and ( max-width: 576px){
+    div{
+        background-color: bisque;
+    }
+}
+@media screen and ( min-width:577px) and (max-width: 768px){
+    div{
+        background-color: lightgray;
+    }
+}
+
+@media screen and ( min-width: 769px ) and (max-width: 992px){
+    div{
+        background-color: beige;
+    }
+}
