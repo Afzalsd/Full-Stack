@@ -1,0 +1,108 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+
+body {
+    background-color: #E70000;
+}
+
+header {
+    color:#E70000;
+    background-color: #f8f8ff;
+    font-size: 1.5vw;
+    height: 8.1vh;
+    padding: 2vh 6vw;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      
+      
+
+}
+
+.body{
+    color:#f8f8ff;
+    padding-top: 13vh;
+
+}
+.heading1{
+    padding: 2vh 6vw;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+}
+.head_p{
+    padding: 0vh 6vw;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 17vh;
+}
+
+.logo{
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    right: 18vw;
+    top: 24vh;
+}
+
+
+
+.container{
+    
+   
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    
+
+}
+
+.box{
+    width: 33vw;
+    height: 40.6vh;
+    
+    color: #B6A9A9;
+    background-color: #571313;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.heading2{
+    padding: 3vh 3vw ;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.con1{
+    padding: 0 3vw;
+    color:#9E5050;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        font-size: 1rem;
+    }
+    .logo{
+        
+        top: 0vh;
+        width: 30vw;
+        position: relative;
+        text-align:center;
+        
+    }
+}
