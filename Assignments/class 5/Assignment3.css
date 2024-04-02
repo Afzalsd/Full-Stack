@@ -15,3 +15,29 @@ h4{
     border-radius: 5%;
     overflow: hidden;
 }
+
+.stars {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.stars h5 {
+    
+    display: inline-block; 
+    vertical-align: middle; 
+     
+}
+
+.stars .star {
+    color: gold;
+    display: inline-block;
+    
+}
+
+.stars .star.half::after {
+    content: '\2605'; 
+    color: gold;
+    width: 50%; 
+    display: inline-block;
+    overflow: hidden;
+}
