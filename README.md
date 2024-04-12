@@ -9,7 +9,7 @@ Backend : Node.js,React.js,Mango DB,Redux
 
 # Java Script
 
-DATA TYPES:
+# DATA TYPES:
 There are 7 data types in java script
 1.undefined
 2.null
@@ -19,7 +19,7 @@ There are 7 data types in java script
 number
 object
 
-VARIABLE DECLARATION:
+# VARIABLE DECLARATION:
 3 Ways to declare a variable
 
 1.var
