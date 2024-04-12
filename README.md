@@ -31,4 +31,6 @@ object
 3.const
     We can't change the variable value after declaration.
 
+# storing variables with assignment operator
+
 
