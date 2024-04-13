@@ -34,3 +34,25 @@ object
 # storing variables with assignment operator
 
 
+
+
+
+#  PRIMITIVES
+
+string,number,boolean,null,undefined,symbol(added in ECMAscript 6) - These are primitive data types
+
+Primitive data types are immutable which means we can't change the values.
+
+1. while we copy data seperate memory space is created. if we change original value, copy value dosen't change
+
+# NON-PRIMITIVES
+
+Objects,(arrays etc)
+
+non-primitives are mutable, means we can change the original value diectly.
+
+1. while we copy data no memory is allocated the copy variable is pointed to same memory location, if we change gthe original value then the copy also changes.
+    To avoid this we use spread operator (spread operator=...)
+ 
+    
+
