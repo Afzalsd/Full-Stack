@@ -1,0 +1,12 @@
+h1{
+  color:maroon;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main{
+  text-align: center;
+}
+.persons{
+  display: flex;
+}
