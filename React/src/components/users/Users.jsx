@@ -5,7 +5,7 @@ function Users(){
     let [users,setUsers]=useState([])
 
     async function getUsers(){
-        let res=await fetch('https://jsonplaceholder.typicode.com/users')
+        let res=await fetch('https://jsonplaceholder.typicode.com/users',{method:"GET"})
         let usersList=await res.json();
         setUsers(usersList)
     }

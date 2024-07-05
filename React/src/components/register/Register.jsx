@@ -1,67 +1,63 @@
-import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useForm } from 'react-hook-form';
 
 function Register() {
-  let { register, handleSubmit } = useForm();
-  let navigate = useNavigate();
 
-  //form submission
-  function handleFormSubmit(userObj) {
-    //programatically navigate to registred-users and send usersList data too
-     navigate("/registered-users", { state: userObj });
-  }
 
-  return (
-    <div>
-      <h1 className="text-center text-info display-3">Register</h1>
+    // const {register, handleSubmit,formState:{errors}} = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
-      <form
-        className="w-50 mx-auto mt-5"
-        onSubmit={handleSubmit(handleFormSubmit)}
-      >
-        {/* username */}
-        <div className="mb-3">
-          <label htmlFor="username" className="form-label">
-            Username
-          </label>
-          <input
-            type="text"
-            {...register("username")}
-            id="username"
-            className="form-control"
-          />
+    // From Submission
+    async function handleFormSubmit(userObj) {
+        console.log('userObj: ', userObj);
+
+        // Post Request
+        let res = await fetch('http://localhost:3000/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userObj)
+        })
+        console.log('res: ', res);
+        if(res.status === 201){
+            alert('User Created Successfully');
+        }
+
+    }
+
+
+    return (
+        <div>
+            <h1 className="text-center text-info display-3">Register</h1>
+            <form className="w-50 mx-auto mt-5" onSubmit={handleSubmit(handleFormSubmit)}>
+                {/* Username */}
+                <div className="mt-2">
+                    <label htmlFor="username" className="form-lable">Username</label>
+                    <input type="text" {...register('username', { required: true, maxLength: 8, minLength: 4 })} id="username" className="form-control" />
+                    {errors.username?.type === 'required' && <p className="text-danger">Username is required</p>}
+                    {errors.username?.type === 'minLength' && <p className="text-danger">Min Lenght Should be 4</p>}
+                    {errors.username?.type === 'maxLength' && <p className="text-danger">Max Lenght Should be 8</p>}
+                </div>
+                {/* Email */}
+                <div className="mt-3">
+                    <label htmlFor="email" className="form-lable">Email</label>
+                    <input type="email" id="email" {...register('email', { required: true })} className="form-control" />
+                    {errors.email?.type === 'required' && <p className="text-danger">Email is required</p>}
+                </div>
+                {/* Password */}
+                <div className="mt-3">
+                    <label htmlFor="password" className="form-lable">Password</label>
+                    <input type="password" id="password" {...register('password', { required: true })} className="form-control" />
+                    {errors.password?.type === 'required' && <p className="text-danger">Password is required</p>}
+                </div>
+                {/* Submit */}
+                <div>
+                    <button type="submit" className="btn btn-primary mt-3">Register</button>
+                </div>
+
+            </form>
         </div>
-        {/* password */}
-        <div className="mb-3">
-          <label htmlFor="password" className="form-label">
-            Password
-          </label>
-          <input
-            type="password"
-            {...register("password")}
-            id="password"
-            className="form-control"
-          />
-        </div>
-        {/* email */}
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">
-            Email
-          </label>
-          <input
-            type="email"
-            {...register("email")}
-            id="email"
-            className="form-control"
-          />
-        </div>
-        {/* submit button */}
-        <button type="submit" className="btn btn-success">
-          Register
-        </button>
-      </form>
-    </div>
-  );
+    )
 }
 
 export default Register;

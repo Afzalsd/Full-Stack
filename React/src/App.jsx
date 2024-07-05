@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Register from './components/register/Register';
 import Login from './components/login/Login';
 import Users from "./components/users/Users";
+import Parent from "./components/Parent/Parent";
 import "./App.css";
 import RegisteredUsers from "./components/registered-users/RegisteredUsers";
 
@@ -33,6 +34,10 @@ function App({ children }) {
         {
           path:'registered-users',
           element:<RegisteredUsers />
+        },
+        {
+          path:'Parent',
+          element:<Parent />
         }
       ]
     }

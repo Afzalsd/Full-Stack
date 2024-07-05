@@ -1,10 +1,15 @@
 import { useState ,useEffect} from 'react';
-import {useLocation} from 'react-router-dom'
+
 
 function RegisteredUsers(){
 
     let [usersList, setUsersList] = useState([]);
-    let {state}=useLocation()
+    async function getUsers(){
+        let res = await fetch('http://localhost:3000/users',{method:"GET"});
+
+        let users = await res.json();   
+        setUsersList(users)
+    }
 
     useEffect(()=>{
         setUsersList([...usersList,state])
