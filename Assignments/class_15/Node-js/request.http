@@ -1,0 +1,54 @@
+# Flats endpoints
+GET http://localhost:3500/flats
+###
+GET http://localhost:3500/flats/1
+###
+POST http://localhost:3500/flats
+Content-Type: application/json
+
+{
+    "id": 5,
+    "type": "Penthouse",
+    "location": "Uptown",
+    "price": 20000000
+}
+###
+PUT http://localhost:3500/flats
+Content-Type: application/json
+
+{
+    "id": 2,
+    "type": "2BHK",
+    "location": "Downtown",
+    "price": 5500000
+}
+###
+DELETE http://localhost:3500/flats/5
+
+# Sites endpoints
+###
+GET http://localhost:3500/sites
+###
+GET http://localhost:3500/sites/1
+###
+POST http://localhost:3500/sites
+Content-Type: application/json
+
+{
+    "id": 4,
+    "location": "Yellowfield",
+    "area": "2000 sq ft",
+    "price": 10000000
+}
+###
+PUT http://localhost:3500/sites
+Content-Type: application/json
+
+{
+    "id": 2,
+    "location": "Bluefield",
+    "area": "1200 sq ft",
+    "price": 6000000
+}
+###
+DELETE http://localhost:3500/sites/4
